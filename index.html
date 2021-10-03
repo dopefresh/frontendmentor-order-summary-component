@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
+      integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <style>
+      @media (min-width: 375px) {
+        body {
+          background-image: url(images/bg-mobile.svg);
+        }
+      }
+
+      @media (min-width: 700px) {
+        body {
+          background-image: url(images/bg-desktop.svg);
+        }
+      }
+    </style>
+  </head>
+  <body class="w-full h-full">
+    <div class="flex justify-center items-center mb-auto h-full">
+      <div
+        class="
+          flex flex-col flex-nowrap
+          justify-center
+          items-center
+          mb-auto
+          w-96
+        "
+      >
+        <img src="images/hero.svg" class="w-full rounded-t-xl" />
+        <div
+          class="
+            flex flex-col
+            justify-center
+            items-center
+            card-body
+            bg-white
+            rounded-b-xl
+            w-full
+          "
+        >
+          <h1 class="text-black text-center font-bold text-2xl mt-8 mb-4">
+            Order Summary
+          </h1>
+          <p class="text-center mx-10">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="flex flex-row justify-center items-center mt-8 w-8/12">
+            <img src="images/icon-music.svg" class="mr-5" />
+            <div class="flex flex-col w-full h-full">
+              <h5 class="text-black text-sm font-bold w-full">Annual Plan</h5>
+              <p class="text-gray-500">$59.99/year</p>
+            </div>
+            <a class="text-indigo-700 ml-8"> Change </a>
+          </div>
+          <div class="flex flex-col my-8 w-3/4">
+            <button class="text-white rounded-md bg-indigo-800 h-10">
+              Proceed to Payment
+            </button>
+            <button class="text-gray-500 mt-5">Cancel Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="h-10 mt-auto">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/dopefresh">Popov Vasilii</a>.
+      </div>
+    </footer>
+  </body>
+</html>
