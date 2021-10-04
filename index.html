@@ -35,25 +35,29 @@
       @media (min-width: 375px) {
         body {
           background-image: url(images/bg-mobile.svg);
+          background-repeat: no-repeat;
         }
       }
 
       @media (min-width: 700px) {
         body {
           background-image: url(images/bg-desktop.svg);
+          background-repeat: no-repeat;
         }
       }
     </style>
   </head>
   <body class="w-full h-full">
-    <div class="flex justify-center items-center mb-auto h-full">
+    <div class="flex flex-col h-full mb-auto">
       <div
         class="
           flex flex-col flex-nowrap
           justify-center
           items-center
           mb-auto
-          w-96
+          w-80
+          mx-auto
+          my-auto
         "
       >
         <img src="images/hero.svg" class="w-full rounded-t-xl" />
@@ -75,13 +79,13 @@
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
-          <div class="flex flex-row justify-center items-center mt-8 w-8/12">
+          <div class="bg-gray-100 h-20 flex flex-row justify-center items-center rounded-md mt-8">
             <img src="images/icon-music.svg" class="mr-5" />
-            <div class="flex flex-col w-full h-full">
+            <div class="flex flex-col justify-center items-center w-full h-full self-center">
               <h5 class="text-black text-sm font-bold w-full">Annual Plan</h5>
               <p class="text-gray-500">$59.99/year</p>
             </div>
-            <a class="text-indigo-700 ml-8"> Change </a>
+            <a class="text-indigo-700 ml-8" href="#"> Change </a>
           </div>
           <div class="flex flex-col my-8 w-3/4">
             <button class="text-white rounded-md bg-indigo-800 h-10">
